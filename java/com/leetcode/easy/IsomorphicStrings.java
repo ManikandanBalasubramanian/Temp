@@ -1,43 +1,24 @@
 package com.leetcode.easy;
 
-import java.util.Map;
-import java.util.HashMap;
-
-
 public class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
-         
-        int sLen = s.length();
-        int tLen = t.length();
+                
+        char[] sCh = new char[256];
+        char[] tCh = new char[256];
         
-        String sOut = "";
-        String tOut = "";
-        
-        Map<Character, String> sMap = new HashMap<>();
-        Map<Character, String> tMap = new HashMap<>();
-        
-        int pointer = 0;
-        boolean output = false;
-        
-        while(sLen == tLen && pointer < sLen) {
-            char sChar = s.charAt(pointer);
-            char tChar = t.charAt(pointer);
-                        
-            if(sMap.containsKey(sChar) && tMap.containsKey(tChar)) {
-                sOut += sMap.get(sChar);
-                tOut += tMap.get(tChar);
-            } else if (!sMap.containsKey(sChar) && !tMap.containsKey(tChar)) {
-                sMap.put(sChar, pointer+",");
-                tMap.put(tChar, pointer+",");
-                sOut += sMap.get(sChar);
-                tOut += tMap.get(tChar);
-            } else {
+        for(int i = 0 ; i < s.length(); i++) {
+      
+            if (sCh[s.charAt(i)] == 0 &&  tCh[t.charAt(i)] == 0) {
+                sCh[s.charAt(i)] = (char)(t.charAt(i) + 1);
+                tCh[t.charAt(i)] = (char)(s.charAt(i) + 1);
+                continue;
+            } 
+            
+            if ((char)(t.charAt(i) + 1) != sCh[s.charAt(i)]) {
                 return false;
             }
-            
-            pointer++;
         }
-            
-        return sOut.equals(tOut);
+        
+        return true;
     }
 }
