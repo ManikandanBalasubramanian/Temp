@@ -1,4 +1,4 @@
-package com.leetcodde.medium;
+package com.leetcode.medium;
 
 public class MaximumProductSubArray {
 
