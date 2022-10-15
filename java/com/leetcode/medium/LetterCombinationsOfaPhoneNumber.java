@@ -1,5 +1,7 @@
 package com.leetcode.medium;
 
+import java.util.LinkedList;
+import java.util.List;
 
 public class LetterCombinationsOfaPhoneNumber {
 
