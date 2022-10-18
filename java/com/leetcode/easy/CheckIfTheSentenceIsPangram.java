@@ -1,5 +1,7 @@
 package com.leetcode.easy;
 
+import java.util.Set;
+import java.util.HashSet;
 
 public class CheckIfTheSentencePangram {
 
