@@ -1,6 +1,5 @@
 package com.leetcode.medium;
 
-
 public class MaximumSumCircularSubarray {
 
     public int maxSubarraySumCircular(int[] A) {
