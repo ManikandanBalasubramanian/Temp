@@ -9,14 +9,13 @@ public class NthTribonacciNumber {
         
         if(n <= 1) return n;
         
-        while (n > 2) {
+        while (n-- > 2) {
             int temp = t0 + t1 + t2;
             t0 = t1;
             t1 = t2;
             t2 = temp;
-            n--;
         }
-        
+
         return t2;
     }
 }
