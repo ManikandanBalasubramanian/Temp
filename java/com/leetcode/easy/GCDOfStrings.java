@@ -2,17 +2,16 @@ package com.leetcode.easy;
 
 public class GCDOfStrings {
 
-	public String gcdOfStrings(String str1, String str2) {
+    public String gcdOfStrings(String str1, String str2) {
+        if (!(str1 + str2).equals(str2 + str1)) {
+            return "";
+        }
 
-		if (str2.length() > str1.length()) 
-		return gcdOfStrings(str2, str1);
+        int gcd = gcd(str1.length(), str2.length());
+        return str2.substring(0, gcd);
+    }
 
-	 if (str2.equals(str1)) 
-		return str1;
-
-	if (str1.startsWith(str2)) 
-		return gcdOfStrings(str1.substring(str2.length()), str2);
-
-	return "";
-	}
+    public int gcd(int a, int b) {
+        return (b == 0)? a : gcd(b, a % b);
+    }
 }
