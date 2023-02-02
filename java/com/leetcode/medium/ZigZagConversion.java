@@ -23,6 +23,7 @@ public class ZigZagConversion {
 				else {
 				    index = index + diff;   
 				}
+
 				set.add(index - 1); 
 				col++;
 
