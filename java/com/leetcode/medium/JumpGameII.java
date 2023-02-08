@@ -12,12 +12,10 @@ public class JumpGameII {
             populate(bArr, i, index);  
         }
                 
-        
         while(--n > 0) {
             n = bArr[n]; 
             counter++;
         }
-        
 
         return counter;
     }
