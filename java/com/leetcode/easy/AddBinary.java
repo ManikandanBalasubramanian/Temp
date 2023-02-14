@@ -2,11 +2,6 @@ package com.leetcode.easy;
 
 public class AddBinary {
 
-  public static void main(String[] args) {
-    AddBinary ad = new AddBinary();
-    System.out.println(ad.addBinary("1010", "1011"));
-  }
-
   public String addBinary(String a, String b) {
 
     int aSize = a.length();
