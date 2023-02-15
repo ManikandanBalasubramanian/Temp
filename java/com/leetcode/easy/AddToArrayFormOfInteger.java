@@ -1,44 +1,24 @@
 package com.leetcode.easy;
 
 import java.util.List;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class AddToArrayFormOfInteger {
 
-	public List<Integer> addToArrayForm(int[] num, int k) {
-        List<Integer> list = new LinkedList<>();
-        
-        int reminder = 0;
-        int n = num.length - 1;
-        
-        while(n >= 0) {
-            
-            if(k > 0) {
-                int lastDigit = k % 10;
-                k = k/10;
-            
-                int sum = reminder + lastDigit + num[n--];
-                list.add(0, sum%10);
-                reminder = sum/10;
-            } else {
-                int sum = reminder + num[n--];
-                list.add(0, sum%10);
-                reminder = sum/10;
-            }
+    public List<Integer> addToArrayForm(int[] A, int K) {
+        int N = A.length;
+        int cur = K;
+        List<Integer> ans = new ArrayList();
+
+        int i = N;
+        while (--i >= 0 || cur > 0) {
+            if (i >= 0)
+                cur += A[i];
+            ans.add(cur % 10);
+            cur /= 10;
         }
-        
-        while(k > 0) {
-            int lastDigit = k % 10;
-            k = k/10;
-            
-            int sum = reminder + lastDigit;
-            list.add(0, sum%10);
-            reminder = sum/10;
-        }
-        
-        if(reminder > 0) list.add(0, reminder);
-        
-        
-        return list;
+
+        Collections.reverse(ans);
+        return ans;
     }
 }
