@@ -1,7 +1,7 @@
 package com.leetcode.easy;
 
-
 public class BestTimeToBuyandSellStock {
+
     public int maxProfit(int[] prices) {
         int start = 0;
         int max = 0;
