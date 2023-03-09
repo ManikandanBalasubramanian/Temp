@@ -7,8 +7,7 @@ import java.util.HashSet;
 public class LinkedListCycleII {
 
     public ListNode detectCycle(ListNode head) {
-        Set<ListNode> refList = new HashSet<>();
-        
+        Set<ListNode> refList = new HashSet<>();        
         while(head != null) {            
             if(refList.contains(head)) {
                 return head;
