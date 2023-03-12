@@ -46,7 +46,6 @@ public class MergeKSortedList {
 	    list.next = rec(list.next, lists, pointerVariable);
 		return list;
     }
-
     
     class Sortbyval implements Comparator<ListNode>
     {
