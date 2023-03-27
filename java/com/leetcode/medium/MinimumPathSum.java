@@ -1,6 +1,5 @@
 package com.leetcode.medium;
 
-
 public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
         int row = grid.length;
