@@ -16,6 +16,7 @@ public class ValidParentheses {
             if(c == ']' && (s.empty() || s.pop() != '[')) return false;
             if(c == '}' && (s.empty() || s.pop() != '{')) return false;   
         }
+        
         return true && s.empty();
     }	
 }
