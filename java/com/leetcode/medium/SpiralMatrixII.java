@@ -2,7 +2,6 @@ package com.leetcode.medium;
 
 public class SpiralMatrixII {
 
-
     int val = 0;
     int loop = 0;
     
