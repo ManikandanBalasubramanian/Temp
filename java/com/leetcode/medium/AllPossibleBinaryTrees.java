@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import com.leetcode.utils.TreeNode;
 
 public class AllPossibleBinaryTrees {
+
     Map<Integer, List<TreeNode>> memo = new HashMap();
 
     public List<TreeNode> allPossibleFBT(int N) {
@@ -17,8 +18,8 @@ public class AllPossibleBinaryTrees {
             } else if (N % 2 == 1) {
                 for (int x = 0; x < N; ++x) {
                     int y = N - 1 - x;
-                    for (TreeNode left: allPossibleFBT(x))
-                        for (TreeNode right: allPossibleFBT(y)) {
+                    for (TreeNode left : allPossibleFBT(x))
+                        for (TreeNode right : allPossibleFBT(y)) {
                             TreeNode bns = new TreeNode(0);
                             bns.left = left;
                             bns.right = right;
