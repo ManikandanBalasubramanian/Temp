@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Permutations {
-	
+
 	public List<List<Integer>> permute(int[] nums) {
 		List<List<Integer>> permutations = new ArrayList<>();
 		if (nums.length == 0) {
@@ -13,11 +13,11 @@ public class Permutations {
 
 		collectPermutations(nums, 0, new ArrayList<>(), permutations);
 		return permutations;
-    }
+	}
 
 	private void collectPermutations(int[] nums, int start, List<Integer> permutation,
- 			List<List<Integer>>  permutations) {
-		
+			List<List<Integer>> permutations) {
+
 		if (permutation.size() == nums.length) {
 			permutations.add(permutation);
 			return;
@@ -29,4 +29,5 @@ public class Permutations {
 			collectPermutations(nums, start + 1, newPermutation, permutations);
 		}
 	}
+
 }
