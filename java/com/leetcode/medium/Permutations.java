@@ -29,5 +29,4 @@ public class Permutations {
 			collectPermutations(nums, start + 1, newPermutation, permutations);
 		}
 	}
-
 }
