@@ -1,6 +1,7 @@
 package com.leetcode.medium;
 
 public class UniquePaths {
+
     public int uniquePaths(int m, int n) {
         int[][] grid = new int[m][n];
         for(int i = 0; i<m; i++){
