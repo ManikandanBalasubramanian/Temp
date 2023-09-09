@@ -5,7 +5,7 @@ import java.uitl.Arrays;
 public class CombinationSumIV {
 
     int[] dp;
-    
+
     public int combinationSum4(int[] nums, int target) {
         dp = new int[target + 1];
         Arrays.fill(dp, -1);
@@ -24,6 +24,7 @@ public class CombinationSumIV {
             }
         }
         dp[target] = res;
+
         return res;
     }
 }
