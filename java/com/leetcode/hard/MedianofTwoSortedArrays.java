@@ -13,15 +13,13 @@ public class MedianofTwoSortedArrays {
         System.arraycopy(nums2, 0, result, l1, l2);
         Arrays.sort(result);
         double output = 0;
-        
-        if((result.length&1) == 1) {
-            output = result[result.length/2];
+
+        if ((result.length & 1) == 1) {
+            output = result[result.length / 2];
         } else {
-            output = result[result.length/2] + result[(result.length/2) - 1];
-            output = output/2;
+            output = result[result.length / 2] + result[(result.length / 2) - 1];
+            output = output / 2;
         }
-        
         return output;
     }
-
 }
