@@ -1,7 +1,6 @@
 package com.leetcode.medium;
 
 public class DifferenceBetweenOnesAndZeroesInRowColumn {
-
     public int[][] onesMinusZeros(int[][] grid) {
         int n = grid.length;
         int m = grid[0].length;
