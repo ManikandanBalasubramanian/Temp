@@ -14,11 +14,11 @@ public class LongestIncreasingSubsequence {
                 nums[index] = nums[i];
             }
         }
-
         return ++pointer;
     }
 
     public int search(int[] a, int low, int high, int target) {
+
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
