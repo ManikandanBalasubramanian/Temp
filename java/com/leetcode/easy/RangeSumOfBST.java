@@ -5,7 +5,7 @@ import com.leetcode.util.TreeNode;
 
 public class RangeSumOfBST {
 
-	public int rangeSumBST(TreeNode root, int low, int high) {
+    public int rangeSumBST(TreeNode root, int low, int high) {
         int ans = 0;
         Stack<TreeNode> stack = new Stack();
         stack.push(root);
@@ -22,4 +22,5 @@ public class RangeSumOfBST {
         }
         return ans;
     }
+
 }
