@@ -6,7 +6,7 @@ import com.leetcode.util.TreeNode;
 
 public class LeafSimilarTrees {
 
-	public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> leaves1 = new ArrayList();
         List<Integer> leaves2 = new ArrayList();
         dfs(root1, leaves1);
@@ -15,6 +15,7 @@ public class LeafSimilarTrees {
     }
 
     public void dfs(TreeNode node, List<Integer> leafValues) {
+
         if (node != null) {
             if (node.left == null && node.right == null)
                 leafValues.add(node.val);
