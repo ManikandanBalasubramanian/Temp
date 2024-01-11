@@ -4,7 +4,7 @@ import com.leetcode.util.TreeNode;
 
 public class MaximumDifferenceBetweenNodeAndAncestor {
 
-   public int maxAncestorDiff(TreeNode root) {
+    public int maxAncestorDiff(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -12,12 +12,10 @@ public class MaximumDifferenceBetweenNodeAndAncestor {
     }
 
     public int helper(TreeNode node, int curMax, int curMin) {
-        // if encounter leaves, return the max-min along the path
         if (node == null) {
             return curMax - curMin;
         }
-        // else, update max and min
-        // and return the max of left and right subtrees
+
         curMax = Math.max(curMax, node.val);
         curMin = Math.min(curMin, node.val);
         int left = helper(node.left, curMax, curMin);
