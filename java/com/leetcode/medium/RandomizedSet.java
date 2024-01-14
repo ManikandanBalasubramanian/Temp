@@ -16,14 +16,16 @@ class RandomizedSet {
     }
 
     public boolean insert(int val) {
-        if (keys.containsKey(val)) return false;
+        if (keys.containsKey(val))
+            return false;
         keys.put(val, values.size());
         values.add(val);
         return true;
     }
 
     public boolean remove(int val) {
-        if (!keys.containsKey(val)) return false;
+        if (!keys.containsKey(val))
+            return false;
         int candidateIndex = keys.get(val);
         int lastIndex = values.size() - 1;
         values.set(candidateIndex, values.get(lastIndex));
@@ -37,4 +39,5 @@ class RandomizedSet {
         int randomChoice = new Random().nextInt(values.size());
         return values.get(randomChoice);
     }
+
 }
