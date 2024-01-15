@@ -10,6 +10,7 @@ import java.util.Arrays;
 public class FindPlayersWithZeroOrOneLosses {
 
     public List<List<Integer>> findWinners(int[][] matches) {
+
         Set<Integer> zeroLoss = new HashSet<>(), oneLoss = new HashSet<>(), moreLosses = new HashSet<>();
 
         for (int[] match : matches) {
@@ -32,8 +33,7 @@ public class FindPlayersWithZeroOrOneLosses {
             }
         }
 
-        List<List<Integer>> answer =
-            Arrays.asList(new ArrayList<>(), new ArrayList<>());
+        List<List<Integer>> answer = Arrays.asList(new ArrayList<>(), new ArrayList<>());
         answer.get(0).addAll(zeroLoss);
         answer.get(1).addAll(oneLoss);
         Collections.sort(answer.get(0));
