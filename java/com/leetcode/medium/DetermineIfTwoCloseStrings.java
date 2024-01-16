@@ -4,14 +4,16 @@ import java.util.Arrays;
 
 public class DetermineTwoCloseStrings {
 
-	private int N = 26;
+    private int N = 26;
+
     public boolean closeStrings(String word1, String word2) {
+
         int[] arr1 = new int[N], arr2 = new int[N];
         for (char ch : word1.toCharArray())
             arr1[ch - 'a']++;
         for (char ch : word2.toCharArray())
             arr2[ch - 'a']++;
-		
+
         for (int i = 0; i < N; i++) {
             if (arr1[i] == arr2[i]) {
                 continue;
