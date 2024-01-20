@@ -5,6 +5,7 @@ import java.util.Stack;
 public class SumOfSubarrayMinimums {
 
     public int sumSubarrayMins(int[] arr) {
+
         int MOD = 1000000007;
 
         Stack<Integer> stack = new Stack<>();
