@@ -7,6 +7,7 @@ public class HouseRobber {
         if(nums.length == 1) return nums[0];
         
         for(int i = 2; i < nums.length; i++) {
+
             if( i-3 < 0) {
                 nums[i] += nums[i-2];
             } else {
