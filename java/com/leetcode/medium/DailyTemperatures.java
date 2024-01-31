@@ -7,7 +7,7 @@ import java.util.Stack;
 public class DailyTemperatures {
 
     public int[] dailyTemperatures(int[] temperatures) {
-    	
+
         final int m = temperatures.length;
         final Map<Integer, Integer> next = new HashMap<>();
         final Stack<Integer> stack = new Stack<>();
@@ -22,5 +22,6 @@ public class DailyTemperatures {
             ans[i] = next.getOrDefault(i, 0);
         }
         return ans;
-    }	
+    }
+
 }
