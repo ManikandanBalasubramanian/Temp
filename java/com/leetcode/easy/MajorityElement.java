@@ -3,6 +3,7 @@ package com.leetcode.easy;
 public class MajorityElement {
 
     public int majorityElement(int[] nums) {
+
         int n = nums.length;
         int majority_element = 0;
 
@@ -20,7 +21,6 @@ public class MajorityElement {
                 majority_element |= bit;
             }
         }
-
         return majority_element;
     }
 }
