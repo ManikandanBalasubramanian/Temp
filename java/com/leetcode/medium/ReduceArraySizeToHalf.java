@@ -4,9 +4,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 
-public class ReduceArraySizeToHalf {
+public class ReduceArraySizetoHalf {
 
-   public int minSetSize(int[] arr) {
+    public int minSetSize(int[] arr) {
         int count = 0, sum = 0;
         Map<Integer, Integer> map = new HashMap<>();
         
