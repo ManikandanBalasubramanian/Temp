@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class BagOfToken {
 
     public int bagOfTokensScore(int[] tokens, int power) {
+        
         Arrays.sort(tokens);
         if (tokens.length == 0 || power < tokens[0]) return 0;
         
