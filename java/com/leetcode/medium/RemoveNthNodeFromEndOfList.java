@@ -3,6 +3,7 @@ package com.leetcode.medium;
 public class RemoveNthNodeFromEndOfList {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        
         int count = 0; 
         ListNode list = head;  
         
