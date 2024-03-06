@@ -3,7 +3,6 @@ package com.leetcode.easy;
 import com.leetcode.utils.ListNode;
 
 public class LinkedListCycle {
-
     public boolean hasCycle(ListNode head) {
         if (head == null) {
             return false;
