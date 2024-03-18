@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class MinimumArrowsToBurstBalloons {
 
 	public int findMinArrowShots(int[][] points) {
+        
         Arrays.sort(points, (a, b) -> Integer.compare(a[1],b[1]));
         int result = 1;
         int previous = 0;
