@@ -3,6 +3,7 @@ package com.leetcode.medium;
 public class TaskScheduler {
 
 	public int leastInterval(char[] tasks, int n) {
+
         int[] counter = new int[26];
         int max = 0;
         int maxCount = 0;
