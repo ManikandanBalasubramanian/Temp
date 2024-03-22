@@ -6,6 +6,7 @@ import com.leetcode.utils.ListNode;
 public class PalindromeLinkedList {
 
     public boolean isPalindrome(ListNode head) {
+
         ListNode hare = head;
         ListNode tortoise = head;
         boolean odd = true;
