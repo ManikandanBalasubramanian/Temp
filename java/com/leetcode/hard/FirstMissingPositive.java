@@ -3,7 +3,8 @@ package com.leetcode.hard;
 public class FirstMissingPositive {
 
     public int firstMissingPositive(int[] nums) {
-  	    boolean myArr [] = new boolean[300];
+
+		boolean myArr [] = new boolean[300];
 	    int index = 1;
 	    for(int i = 0; i < nums.length ; i++) {
 	        if(nums[i] <= 300 && nums[i] > 0) {
