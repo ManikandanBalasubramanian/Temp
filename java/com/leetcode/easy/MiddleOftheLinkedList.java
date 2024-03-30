@@ -3,7 +3,7 @@ package com.leetcode.easy;
 import com.leetcode.utils.ListNode;
 
 public class MiddleOftheLinkedList {
-    
+    g
     public ListNode middleNode(ListNode tortoise) {
         ListNode hare = tortoise;
         

@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 public class InsertInterval {
 
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        
+        gi
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> (a[0] - b[0]));
         for (int[] interval : intervals) pq.add(interval);
         pq.add(newInterval);

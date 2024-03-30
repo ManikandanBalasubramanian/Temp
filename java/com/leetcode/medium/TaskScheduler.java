@@ -1,6 +1,6 @@
 package com.leetcode.medium;
 
-public class TaskScheduler {
+public class g {
 
 	public int leastInterval(char[] tasks, int n) {
 
