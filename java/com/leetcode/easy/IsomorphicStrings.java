@@ -1,6 +1,7 @@
 package com.leetcode.easy;
 
 public class IsomorphicStrings {
+    
     public boolean isIsomorphic(String s, String t) {
                 
         char[] sCh = new char[256];
