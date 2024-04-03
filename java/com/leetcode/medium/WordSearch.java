@@ -3,6 +3,7 @@ package com.leetcode.medium;
 public class WordSearch {
 
     public boolean exist(char[][] board, String word) {
+        
         char c = word.charAt(0);
         int m = board.length;
         int n = board[0].length;
