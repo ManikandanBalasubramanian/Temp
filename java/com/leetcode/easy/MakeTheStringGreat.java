@@ -10,7 +10,6 @@ public class MakeTheStringGreat {
                 return makeGood(s.substring(0, i) + s.substring(i+2));
             }
         }
-        
         return s;
     }
 }
