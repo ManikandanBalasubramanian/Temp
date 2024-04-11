@@ -6,6 +6,7 @@ import java.util.StringBuilder;
 public class RemoveKDigits {
 
     public String removeKdigits(String num, int k) {
+        
         if(k >= num.length())
             return "0";
         
