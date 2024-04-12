@@ -3,6 +3,7 @@ package com.leetcode.hard;
 public class TrappingRainWater {
 
     public int trap(int[] height) {
+        
         int total = 0;
         int start = 0, prev = 0;
         
