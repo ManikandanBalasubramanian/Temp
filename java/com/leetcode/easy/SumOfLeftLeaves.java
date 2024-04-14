@@ -14,6 +14,5 @@ public class SumOfLeftLeaves {
         if(root.left == null && root.right == null && isLeft) return root.val;
 
         return sumLeft(root.left, true) + sumLeft(root.right, false);
-
     }
 }
