@@ -7,6 +7,7 @@ public class AddOneRowToTree {
     boolean isLeft = true;
     
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
+        
         if(depth == 1) {
             TreeNode node = new TreeNode(val);
             if(isLeft) node.left = root;
