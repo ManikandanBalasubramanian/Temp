@@ -3,6 +3,7 @@ import com.leetcode.easy;
 public class NthTribonacciNumber {
 
     public int tribonacci(int n) {
+        
         int t0 = 0;
         int t1 = 1;
         int t2 = 1;
