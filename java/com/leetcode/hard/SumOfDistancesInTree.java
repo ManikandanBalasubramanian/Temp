@@ -10,7 +10,9 @@ public class SumOfDistancesInTree {
     int[] ans, count;
     List<Set<Integer>> graph;
     int N;
+
     public int[] sumOfDistancesInTree(int N, int[][] edges) {
+
         this.N = N;
         graph = new ArrayList<Set<Integer>>();
         ans = new int[N];
@@ -29,6 +31,7 @@ public class SumOfDistancesInTree {
     }
 
     public void dfs(int node, int parent) {
+
         for (int child: graph.get(node))
             if (child != parent) {
                 dfs(child, node);
@@ -38,6 +41,7 @@ public class SumOfDistancesInTree {
     }
 
     public void dfs2(int node, int parent) {
+        
         for (int child: graph.get(node))
             if (child != parent) {
                 ans[child] = ans[node] - count[child] + N - count[child];
