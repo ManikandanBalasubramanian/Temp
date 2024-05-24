@@ -1,7 +1,7 @@
 package com.leetcode.medium;
 
 public class KthSmallestPrimeFraction {
-    
+    g
     public int[] kthSmallestPrimeFraction(int[] arr, int k) {
         // Priority queue to store fractions with comparator to sort by fraction value
         PriorityQueue<int[]> pq = new PriorityQueue<>(
