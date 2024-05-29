@@ -7,6 +7,7 @@ import java.util.HashMap;
 public class LongestPalindrome {
 
     public int longestPalindrome(String s) {
+        
         Map<Character, Integer> charMap = new HashMap<>();
         int length = 0;
         boolean middle = false;
