@@ -13,8 +13,10 @@ public class SubArraySumsDivisibleByK {
             map.put(remainder, map.getOrDefault(remainder, 0) + 1);
         }
         int result = map.getOrDefault(0, 0);
-        for (int frequency : map.values())
+        for (int frequency : map.values()) {
             result += frequency * (frequency - 1) / 2;
+        }
+        
         return result;
     }
 }
