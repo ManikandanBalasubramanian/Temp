@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Collections;
 
 
-
 public class RelativeSortArray {
 
 	public int[] relativeSortArray(int[] arr1, int[] arr2) {
