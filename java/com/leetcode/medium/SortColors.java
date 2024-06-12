@@ -3,6 +3,7 @@ package com.leetcode.medium;
 public class SortColors {
 
     public void sortColors(int[] nums) {
+        
         int[] count = new int[3];
         
         for(int n : nums) count[n] += 1;
