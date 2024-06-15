@@ -23,7 +23,7 @@ public class IPO {
     public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         int n = profits.length;
         Pair [] projects = new Pair[n];
-        for(int i = 0;i<n;i++){
+        for(int i = 0; i < n; i++){
             projects[i] = new Pair(capital[i],profits[i]);
         }
         
@@ -31,14 +31,14 @@ public class IPO {
         PriorityQueue<Integer> priority = new PriorityQueue<Integer>( Collections.reverseOrder());
         int j = 0;
         int ans = w;
-        for(int i = 0;i<k;i++){
-            while(j<n && projects[j].capital<=ans){
+        for(int i = 0;i < k; i++){
+            while(j < n && projects[j].capital <= ans) {
                 priority.add(projects[j++].profit);
             }
-            if(priority.isEmpty()){
+            if(priority.isEmpty()) {
                 break;
             }
-            ans+=priority.poll();
+            ans += priority.poll();
         }
         return ans;
     }
