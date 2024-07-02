@@ -17,4 +17,5 @@ public class IntersectionOfTwoArraysII {
         
        return Arrays.stream(nums2).filter(i -> list.remove((Integer) i)).toArray();
     }
+    
 }
