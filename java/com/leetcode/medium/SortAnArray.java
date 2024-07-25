@@ -35,4 +35,5 @@ public class SortAnArray {
             mergeFun(arr, low, middle, high);
         }
     }
+    
 }
