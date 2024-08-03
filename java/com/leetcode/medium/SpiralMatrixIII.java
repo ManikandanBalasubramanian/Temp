@@ -10,6 +10,7 @@ public class SpiralMatrixIII {
             this.col=j;
         }
     }
+    
     public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
         List<Pair> li = new ArrayList<>();
         int r_top = rStart;
