@@ -3,6 +3,7 @@ package com.leetcode.easy;
 public class MakeTwoArraysEqualByReversingSubArrays {
     
     public boolean canBeEqual(int[] target, int[] arr) {
+        
         if(target.length!=arr.length){
             return false;
         }
