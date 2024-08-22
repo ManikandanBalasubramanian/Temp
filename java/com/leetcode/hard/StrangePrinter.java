@@ -3,6 +3,7 @@ package com.leetcode.hard;
 public class StrangePrinter {
 
     public int strangePrinter(String s) {
+        
         if (s == null || s.length() == 0) {
             return 0;
         }
