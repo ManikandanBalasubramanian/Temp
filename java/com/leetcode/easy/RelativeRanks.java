@@ -1,6 +1,6 @@
 package com.leetcode.easy;
 
-public class RelativeRanks {
+public class g {
     public String[] findRelativeRanks(int[] score) {
         int n = score.length;
         String[] result = new String[n];
