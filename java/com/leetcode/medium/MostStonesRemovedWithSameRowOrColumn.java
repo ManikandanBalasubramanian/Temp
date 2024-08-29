@@ -3,6 +3,7 @@ package com.leetcode.medium;
 import java.util.Map;
 import java.util.HashMap;
 
+
 public class MostStonesRemovedWithSameRowOrColumn {
 
     public int removeStones(int[][] stones) {
