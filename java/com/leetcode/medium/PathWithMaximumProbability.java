@@ -4,7 +4,6 @@ public class PathWithMaximumProbability {
 
     public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
 
-        // build graph -> double[0]: node, double[1]: edge prob
         Map<Integer, List<double[]>> graph = new HashMap<>();
         for (int i = 0; i < edges.length; ++i) {
             int[] edge = edges[i];
