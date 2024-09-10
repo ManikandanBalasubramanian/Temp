@@ -3,6 +3,7 @@ package com.leetcode.medium;
 public class SplitLinkedListInParts {
 
     public ListNode[] splitListToParts(ListNode root, int k) {
+        
         ListNode[] parts = new ListNode[k];
         int len = 0;
         for (ListNode node = root; node != null; node = node.next)
